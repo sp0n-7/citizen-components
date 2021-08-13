@@ -27,10 +27,14 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.3.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c"
-  }  
+  }
 }
