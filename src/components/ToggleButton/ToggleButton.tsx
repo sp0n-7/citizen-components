@@ -3,10 +3,10 @@ import classnames from "classnames"
 import style from "./ToggleButton.module.css"
 
 export interface ToggleButtonProps  {
-  label?: string;
+  label: string;
   onChange: Function;
-  on?: boolean;
-  onLabel: string;
+  on: boolean;
+  onLabel?: string;
   disabled?: boolean;
 };
 
