@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label {
+  margin-right: 10px;
+}
+
+.offLabel {
+  margin-left: 10px;
+}
+
+.toggle {
+  background: #5e656f;
+  border-radius: 40px;
+  padding: 2px;
+  width: 48px;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.circleContainer {
+  display: flex;
+  justify-content: flex-end;
+  transition: flex 0.2s ease-in-out;
+}
+
+.circle {
+  background: #a7abaf;
+  border-radius: 40px;
+  width: 20px;
+  height: 20px;
+}
+
+.on .circleContainer {
+  flex: 1;
+}
+
+.on .toggle {
+  background: linear-gradient(45deg, #0285d4 0%, #22c9ff 100%);
+}
+
+.on .circle {
+  background: #fff;
+}

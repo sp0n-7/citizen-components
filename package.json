@@ -24,6 +24,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-typescript2": "^0.30.0",
+    "storybook-css-modules-preset": "^1.1.1",
     "typescript": "^4.3.5"
   },
   "peerDependencies": {
@@ -33,7 +34,9 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.60"
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "classnames": "^2.3.1",
+    "postcss-scss": "^4.0.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
