@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
-import TextInput from "./TextInput";
+import MultilineInput from "./MultilineInput";
 import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
 
 export default {
-  title: "Components/Inputs/TextInput",
-  component: TextInput,
+  title: "Components/Inputs/MultilineInput",
+  component: MultilineInput,
 } as Meta;
 
 const Template: Story<OutlinedInputProps> = (args) => {
@@ -20,18 +20,11 @@ const Template: Story<OutlinedInputProps> = (args) => {
 
   return (
     <>
-      <TextInput {...args} onChange={onChange} />
+      <MultilineInput {...args} onChange={onChange} />
       <p>{val}</p>
     </>
   );
 };
 
-export const Notched = Template.bind({});
-Notched.args = {
-  notched: true,
-  label: "This is a label",
-  placeholder: "Hey this is an input",
-};
-
-export const NoNotch = Template.bind({});
-NoNotch.args = { placeholder: "Hey this is an input" };
+export const Primary = Template.bind({});
+Primary.args = { placeholder: "Update...", multiline: true, rows: 3 };
