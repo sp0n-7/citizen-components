@@ -26,5 +26,12 @@ const Template: Story<OutlinedInputProps> = (args) => {
   );
 };
 
-export const Primary = Template.bind({});
-Primary.args = { label: "Hey", placeholder: "Hey this is an input" };
+export const Notched = Template.bind({});
+Notched.args = {
+  notched: true,
+  label: "This is a label",
+  placeholder: "Hey this is an input",
+};
+
+export const NoNotch = Template.bind({});
+NoNotch.args = { placeholder: "Hey this is an input" };
