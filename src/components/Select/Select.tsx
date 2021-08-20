@@ -1,18 +1,15 @@
-import React, {ChangeEvent, ReactNode} from "react";
+import React, {ChangeEvent} from "react";
 import {makeStyles, withStyles} from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
 import {SelectProps} from "@material-ui/core/Select";
-import Select from '@material-ui/core/Select';
+import MaterialUISelect from '@material-ui/core/Select';
 import InputBase from '@material-ui/core/InputBase';
 import ArrowDropDownRoundedIcon from '@material-ui/icons/ArrowDropDownRounded';
-import {BootStrapInputStyle, DropdownStyle, SelectStyle} from "./SelectInput.styles";
+import {BootStrapInputStyle, DropdownStyle, SelectStyle} from "./Select.styles";
 
 const BootstrapInput = withStyles(BootStrapInputStyle)(InputBase);
-
 const useStyles = makeStyles(DropdownStyle)
-
-
-const SelectStyled = withStyles(SelectStyle)(Select);
+const SelectStyled = withStyles(SelectStyle)(MaterialUISelect);
 
 export interface option {
   label: string;
@@ -23,18 +20,11 @@ export interface SelectInputProps extends SelectProps {
   options: option[]
 }
 
-export default function SelectInput({options, ...props}: SelectInputProps) {
-  const [value, setValue] = React.useState<any>('');
-
-  const handleChange = (event: ChangeEvent<{ name?: string | undefined; value: unknown }>) => {
-    setValue(event.target.value as any);
-  };
+export default function Select({options, ...props}: SelectInputProps) {
 
   const classes = useStyles();
   return (
     <SelectStyled
-      onChange={handleChange}
-      value={value}
       input={<BootstrapInput/>}
       defaultValue={"None"}
       displayEmpty
