@@ -9,7 +9,7 @@ import { baseStyles } from "./TextInput.styles";
 const BaseInput = withStyles(baseStyles)(OutlinedInput);
 
 const TextInput = (props: OutlinedInputProps) => {
-  return <BaseInput notched {...props} />;
+  return <BaseInput {...props} />;
 };
 
 export default TextInput;
