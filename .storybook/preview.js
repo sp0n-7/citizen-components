@@ -6,4 +6,13 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+    default: 'POS',
+    values: [
+      {
+        name: 'POS',
+        value: '#0E151D'
+      }
+    ],
+  },
 }

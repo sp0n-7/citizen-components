@@ -1,3 +1,15 @@
+# v1.0.3 (Fri Aug 20 2021)
+
+#### 🐛 Bug Fix
+
+- Select Component [#6](https://github.com/sp0n-7/citizen-components/pull/6) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.1 (Thu Aug 19 2021)
 
 #### ⚠️ Pushed to `master`
