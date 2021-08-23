@@ -1,3 +1,15 @@
+# v1.0.4 (Mon Aug 23 2021)
+
+#### 🐛 Bug Fix
+
+- Add support for no notch input and create multiline input [#5](https://github.com/sp0n-7/citizen-components/pull/5) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.3 (Fri Aug 20 2021)
 
 #### 🐛 Bug Fix
