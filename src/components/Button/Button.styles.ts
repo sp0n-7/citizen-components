@@ -1,0 +1,29 @@
+export const ButtonStyle = () => ({
+  root: {
+    borderRadius: "30px",
+    padding: '15px  25px 15px 25px',
+  },
+  label: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      'sans-serif',
+    ].join(','),
+    fontSize: "13px",
+    lineHeight: "16px",
+    fontWeight: 700,
+  },
+})
+
+export const PropColors = () => ({
+  colors: (props: {
+    backgroundColor?: string;
+    textColor?: string;
+  }) => ({
+    backgroundColor: props.backgroundColor,
+    color: props.textColor,
+    "&:hover": {
+      backgroundColor: props.backgroundColor
+    }
+  }),
+})

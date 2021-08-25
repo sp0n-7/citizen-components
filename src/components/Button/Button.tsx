@@ -1,56 +1,29 @@
 import React from "react";
-import "./button.css";
+import MaterialButton from '@material-ui/core/Button';
+import {ButtonProps} from "@material-ui/core/Button";
+import {makeStyles, withStyles} from "@material-ui/core/styles";
+import { ButtonStyle, PropColors } from "./Button.styles"
 
-export interface ButtonProps  {
-  /**
-   * Is this the principal call to action on the page?
-   */
+const ButtonStyled = withStyles(ButtonStyle)(MaterialButton);
+
+export interface StyledButtonProps extends ButtonProps {
   primary?: boolean;
-  /**
-   * What background color to use
-   */
   backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: "small" | "medium" | "large";
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
+  textColor?: string;
   onClick?: (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => void;
 };
 
-/**
- * Primary UI component for user interaction
- */
-const Button = ({
-  primary = true,
-  backgroundColor,
-  size = "medium",
-  onClick,
-  label,
-}: ButtonProps) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
+const useStyles = makeStyles(PropColors);
+
+export default function Button({ backgroundColor, textColor,
+                        onClick, ...props }: StyledButtonProps) {
+  const classes = useStyles({backgroundColor, textColor});
+
   return (
-    <button
-      type="button"
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
-        " "
-      )}
-      style={backgroundColor ? { backgroundColor }: {}}
-      onClick={onClick}
-    >
-      {label}
-    </button>
+    <ButtonStyled className={ `${classes.colors}` } {...props} style={{textTransform: 'none'}}>
+      {props.children}
+    </ButtonStyled>
   );
 };
-
-export default Button;

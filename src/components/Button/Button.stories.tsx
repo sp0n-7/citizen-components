@@ -1,7 +1,7 @@
 import React from "react";
 import { Meta} from "@storybook/react/types-6-0";
 import {Story} from "@storybook/react"
-import Button, { ButtonProps } from "./Button";
+import Button, { StyledButtonProps } from "./Button";
 
 export default {
   title: "Components/Button",
@@ -11,8 +11,12 @@ export default {
   },
 } as Meta;
 
-
-const Template: Story<ButtonProps> = (args) => <Button {...args} />
-
+const Template: Story<StyledButtonProps> = (args) => {
+  return (
+    <Button {...args}>
+      Archive Incident
+    </Button>
+  )
+}
 export const Primary = Template.bind({})
-Primary.args = { label: "Primary", size: "large" }
+Primary.args = { backgroundColor: "#331C1F", textColor: "#CC858D" }
