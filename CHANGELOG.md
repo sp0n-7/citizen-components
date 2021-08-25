@@ -1,3 +1,15 @@
+# v1.0.5 (Wed Aug 25 2021)
+
+#### ⚠️ Pushed to `master`
+
+- New, easier/cleaner button ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.4 (Mon Aug 23 2021)
 
 #### 🐛 Bug Fix
