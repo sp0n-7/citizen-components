@@ -1,3 +1,19 @@
+# v1.0.6 (Wed Aug 25 2021)
+
+#### 🐛 Bug Fix
+
+- Revert "New, easier/cleaner button" ([@kusgupta](https://github.com/kusgupta))
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:sp0n-7/citizen-components ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.5 (Wed Aug 25 2021)
 
 #### ⚠️ Pushed to `master`
