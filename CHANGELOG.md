@@ -1,3 +1,16 @@
+# v1.0.7 (Thu Aug 26 2021)
+
+#### 🐛 Bug Fix
+
+- Fix Select Naming [#8](https://github.com/sp0n-7/citizen-components/pull/8) ([@kusgupta](https://github.com/kusgupta))
+- Changed Text Input Colors to be closer to design [#9](https://github.com/sp0n-7/citizen-components/pull/9) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.6 (Wed Aug 25 2021)
 
 #### 🐛 Bug Fix
