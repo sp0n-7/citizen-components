@@ -8,29 +8,29 @@ const ButtonStyled = withStyles(ButtonStyle)(MaterialButton);
 
 export interface StyledButtonProps extends ButtonProps {
   primary?: boolean;
-  backgroundColor?: string;
-  textColor?: string;
-  type?: 'submit' | 'warning' | 'active' | 'secondary';
+  buttonType?: 'submit' | 'warning' | 'active' | 'secondary';
   fontWeight?: number;
   onClick?: (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => void;
-};
+}
 
 const useStyles = makeStyles(PropColors);
 
-export default function Button({ backgroundColor, textColor, type,
-                        onClick, fontWeight=700, ...props }: StyledButtonProps) {
-  if (type === 'submit') {
+export default function Button({ buttonType, onClick, fontWeight=600, ...props }: StyledButtonProps) {
+  let backgroundColor
+  let textColor
+
+  if (buttonType === 'submit') {
     backgroundColor = '#4DA6FF'
     textColor = 'white'
-  } else if (type === 'warning') {
+  } else if (buttonType === 'warning') {
     backgroundColor = '#331C1F'
     textColor = '#CC858D'
-  } else if (type === 'active') {
+  } else if (buttonType === 'active') {
     backgroundColor = '#1A2633'
     textColor = 'white'
-  } else if (type === 'secondary') {
+  } else if (buttonType === 'secondary') {
     backgroundColor = '#666666'
     textColor = 'white'
   }
