@@ -1,12 +1,12 @@
 import React, {ChangeEvent} from "react";
 import {Meta} from "@storybook/react/types-6-0";
 import {Story} from "@storybook/react";
-import SelectInput, {SelectInputProps} from "./Select";
+import {SelectInputProps} from "./Select";
 import Select from "./Select";
 
 export default {
   title: "Components/Select",
-  component: SelectInput,
+  component: Select,
 } as Meta;
 
 const Template: Story<SelectInputProps> = (args) => {
