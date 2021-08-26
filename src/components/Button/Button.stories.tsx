@@ -14,9 +14,19 @@ export default {
 const Template: Story<StyledButtonProps> = (args) => {
   return (
     <Button {...args}>
-      Archive Incident
+      {args.children}
     </Button>
   )
 }
-export const Primary = Template.bind({})
-Primary.args = { backgroundColor: "#331C1F", textColor: "#CC858D" }
+
+export const Active = Template.bind({})
+Active.args = { type: 'active', children: 'Active' }
+
+export const Submit = Template.bind({})
+Submit.args = { type: 'submit', children: 'Submit' }
+
+export const Warning = Template.bind({})
+Warning.args = { type: 'warning', children: 'Warning' }
+
+export const Secondary = Template.bind({})
+Secondary.args = { type: 'secondary', children: 'Secondary' }
