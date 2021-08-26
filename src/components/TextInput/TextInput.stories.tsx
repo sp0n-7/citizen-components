@@ -21,7 +21,6 @@ const Template: Story<OutlinedInputProps> = (args) => {
   return (
     <>
       <TextInput {...args} onChange={onChange} />
-      <p>{val}</p>
     </>
   );
 };
