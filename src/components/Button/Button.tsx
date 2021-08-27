@@ -9,7 +9,6 @@ const ButtonStyled = withStyles(ButtonStyle)(MaterialButton);
 export interface StyledButtonProps extends ButtonProps {
   primary?: boolean;
   buttonType?: 'submit' | 'warning' | 'active' | 'secondary';
-  fontWeight?: number;
   onClick?: (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => void;
@@ -17,7 +16,7 @@ export interface StyledButtonProps extends ButtonProps {
 
 const useStyles = makeStyles(PropColors);
 
-export default function Button({ buttonType, onClick, fontWeight=600, ...props }: StyledButtonProps) {
+export default function Button({ buttonType, onClick, ...props }: StyledButtonProps) {
   let backgroundColor
   let textColor
 
@@ -35,7 +34,7 @@ export default function Button({ buttonType, onClick, fontWeight=600, ...props }
     textColor = 'white'
   }
 
-  const classes = useStyles({backgroundColor, textColor, fontWeight});
+  const classes = useStyles({backgroundColor, textColor});
 
   return (
     <ButtonStyled className={ `${classes.colors}` } {...props} style={{textTransform: 'none'}}>

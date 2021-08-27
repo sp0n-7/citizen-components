@@ -17,7 +17,6 @@ export const baseStyles = {
   notchedOutline: {
     "& > legend": {
       visibility: "visible",
-      fontWeight: "600",
       fontSize: "10px",
       lineHeight: "16px",
       color: "#8C8C8C",

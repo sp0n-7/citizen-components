@@ -18,13 +18,12 @@ export const PropColors = () => ({
   colors: (props: {
     backgroundColor?: string;
     textColor?: string;
-    fontWeight?: number;
   }) => ({
     backgroundColor: props.backgroundColor,
     color: props.textColor,
     "&:hover": {
       backgroundColor: props.backgroundColor
     },
-    fontWeight: props.fontWeight,
+    fontWeight: 600,
   }),
 })
