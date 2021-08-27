@@ -1,3 +1,15 @@
+# v1.0.8 (Fri Aug 27 2021)
+
+#### 🐛 Bug Fix
+
+- POS Buttons [#7](https://github.com/sp0n-7/citizen-components/pull/7) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.7 (Thu Aug 26 2021)
 
 #### 🐛 Bug Fix
