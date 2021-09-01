@@ -3,20 +3,22 @@ import { Typography } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 
 import { Configuration, TextStyles } from "./Text.styles";
-import { TypographyProps } from "@material-ui/core/Typography";
+
+import { PropTypes } from "@material-ui/core";
 
 export interface TextProps {
   size: "small" | "medium";
   weight?: "normal" | "semibold" | "bold";
   color: string;
   children: React.ReactNode;
+  align?: PropTypes.Alignment;
 }
 
 const TypographyStyled = withStyles(TextStyles)(Typography);
 
 const useStyles = makeStyles(Configuration);
 
-const Text = ({ size, color, children, weight }: TextProps) => {
+const Text = ({ size, color, children, weight, align }: TextProps) => {
   let fontWeight;
   let textColor;
   let fontSize;
@@ -58,7 +60,13 @@ const Text = ({ size, color, children, weight }: TextProps) => {
       break;
   }
 
-  const classes = useStyles({ textColor, fontWeight, fontSize, lineHeight });
+  const classes = useStyles({
+    textColor,
+    fontWeight,
+    fontSize,
+    lineHeight,
+    textAlign: align,
+  });
 
   return (
     <TypographyStyled classes={{ root: classes.root }}>

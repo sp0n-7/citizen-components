@@ -10,9 +10,16 @@ export default {
 
 const Template: Story<TextProps> = (args) => {
   return (
-    <Text size={args.size} color={args.color} weight={args.weight}>
-      {args.children}
-    </Text>
+    <div style={{ width: "100%" }}>
+      <Text
+        size={args.size}
+        color={args.color}
+        weight={args.weight}
+        align={args.align}
+      >
+        {args.children}
+      </Text>
+    </div>
   );
 };
 
@@ -22,4 +29,5 @@ PrimarySmallSemibold.args = {
   color: "primary",
   children: "Hey this is some text",
   weight: "normal",
+  align: "inherit",
 };
