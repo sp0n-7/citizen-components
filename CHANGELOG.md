@@ -1,3 +1,15 @@
+# v1.0.11 (Thu Sep 02 2021)
+
+#### 🐛 Bug Fix
+
+- Any color text [#11](https://github.com/sp0n-7/citizen-components/pull/11) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.10 (Thu Sep 02 2021)
 
 #### ⚠️ Pushed to `master`
