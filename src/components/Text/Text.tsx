@@ -45,6 +45,9 @@ const Text = ({ size, color, children, weight, align }: TextProps) => {
     case "grey":
       textColor = "#8c8c8c";
       break;
+    case "lightblue":
+      textColor = "#4da6ff";
+      break;
   }
 
   switch (weight) {
