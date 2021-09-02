@@ -1,3 +1,15 @@
+# v1.0.10 (Thu Sep 02 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Update README.md ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.9 (Thu Sep 02 2021)
 
 #### 🐛 Bug Fix
