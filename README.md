@@ -10,9 +10,4 @@ When a new component is created, export it through `src/index.ts` as the other c
 
 ---
 
-Run `yarn build`
-
----
-
-In order to use the new component in another service, make sure to reinstall the `sp0n-7/citizen-components` package to get the latest changes. You may have to remove the pacakge and re-add it. Eventually,
-we'll use real semantic versioning and publish this package to a proper registry so this process will be easier.
+This repo is setup to automatically publishe a new version of the package to npm on merge to master
