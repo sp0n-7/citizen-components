@@ -12,9 +12,7 @@ export const CheckboxStyle = () => ({
 })
 
 export const Configuration = () => ({
-  root: (props: {
-    transform: number;
-  }) => ({
+  root: (props: { transform: number }) => ({
     transform: "scale(" + props.transform.toString() + ")",
   }),
 });
