@@ -1,3 +1,15 @@
+# v1.0.12 (Tue Sep 07 2021)
+
+#### 🐛 Bug Fix
+
+- Add onClick to Button Component [#14](https://github.com/sp0n-7/citizen-components/pull/14) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.11 (Thu Sep 02 2021)
 
 #### 🐛 Bug Fix
