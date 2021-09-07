@@ -38,7 +38,6 @@
     "@material-ui/lab": "^4.0.0-alpha.60",
     "classnames": "^2.3.1",
     "postcss-scss": "^4.0.0",
-    "rollup-plugin-image": "^1.0.2"
   },
   "scripts": {
     "storybook": "start-storybook -s src/public -p 6006",
