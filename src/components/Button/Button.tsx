@@ -37,7 +37,7 @@ export default function Button({ buttonType, onClick, ...props }: StyledButtonPr
   const classes = useStyles({backgroundColor, textColor});
 
   return (
-    <ButtonStyled className={ `${classes.colors}` } {...props} style={{textTransform: 'none'}}>
+    <ButtonStyled className={ `${classes.colors}` } onClick={onClick} {...props} style={{textTransform: 'none'}}>
       {props.children}
     </ButtonStyled>
   );
