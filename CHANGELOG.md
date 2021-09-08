@@ -1,3 +1,15 @@
+# v1.0.13 (Wed Sep 08 2021)
+
+#### 🐛 Bug Fix
+
+- Callout Button [#15](https://github.com/sp0n-7/citizen-components/pull/15) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.12 (Tue Sep 07 2021)
 
 #### 🐛 Bug Fix
