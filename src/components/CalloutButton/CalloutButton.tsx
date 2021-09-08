@@ -18,7 +18,6 @@ export default function CalloutButton({ onClick, label, ...props }: StyledButton
   return (
     <ButtonStyled onClick={onClick} {...props} style={{textTransform: 'none'}} disableRipple >
       {label || props.children}
-      {/*{props.children}*/}
     </ButtonStyled>
   );
 }
