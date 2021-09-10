@@ -1,4 +1,8 @@
 export const CalloutButtonStyle = () => ({
+  root: {
+    width: "24px",
+    minWidth: "24px",
+  },
   label: {
     fontFamily: [
       '-apple-system',
@@ -6,8 +10,9 @@ export const CalloutButtonStyle = () => ({
       'sans-serif',
     ].join(','),
     fontSize: "12px",
-    width: "24px",
     height: "24px",
+    width: "24px",
+    padding: "0px 5px",
     backgroundColor: "#262626",
     color: "#8C8C8C",
     borderRadius: "4px",
