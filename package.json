@@ -1,6 +1,6 @@
 {
   "name": "citizen-components",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Components custom built for citizen web development",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
