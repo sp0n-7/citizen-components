@@ -18,8 +18,7 @@ const ToggleButton = ({ label, onClick, on, disabled }: ToggleButtonProps) => {
         className={classnames(
           style.toggle,
           { [style.toggleOn]: on },
-          { [style.toggleOff]: !on },
-          { [style.disabled]: disabled }
+          { [style.toggleOff]: !on }
         )}
         onClick={(e) => {
           if (!disabled) onClick();
