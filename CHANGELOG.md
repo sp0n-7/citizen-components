@@ -1,3 +1,15 @@
+# v1.0.16 (Fri Sep 10 2021)
+
+#### 🐛 Bug Fix
+
+- Made callout button less "invisibly wide" [#18](https://github.com/sp0n-7/citizen-components/pull/18) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.15 (Fri Sep 10 2021)
 
 #### 🐛 Bug Fix
