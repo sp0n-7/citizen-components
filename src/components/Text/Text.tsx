@@ -26,7 +26,6 @@ const Text = ({ size, color, children, weight, align, style }: TextProps) => {
   let lineHeight;
 
   switch (size) {
-    case undefined:
     case "small":
       fontSize = "12px";
       lineHeight = "16px";
@@ -34,6 +33,10 @@ const Text = ({ size, color, children, weight, align, style }: TextProps) => {
     case "medium":
       fontSize = "15px";
       lineHeight = "20px";
+      break;
+    default:
+      fontSize = "12px";
+      lineHeight = "16px";
       break;
   }
 
