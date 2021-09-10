@@ -7,7 +7,7 @@ import { Configuration, TextStyles } from "./Text.styles";
 import { PropTypes } from "@material-ui/core";
 
 export interface TextProps {
-  size: "small" | "medium";
+  size?: "small" | "medium";
   weight?: "normal" | "semibold" | "bold";
   color: string;
   children: React.ReactNode;
@@ -26,6 +26,7 @@ const Text = ({ size, color, children, weight, align, style }: TextProps) => {
   let lineHeight;
 
   switch (size) {
+    case undefined:
     case "small":
       fontSize = "12px";
       lineHeight = "16px";
