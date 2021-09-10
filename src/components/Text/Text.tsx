@@ -12,13 +12,14 @@ export interface TextProps {
   color: string;
   children: React.ReactNode;
   align?: PropTypes.Alignment;
+  style?: React.CSSProperties;
 }
 
 const TypographyStyled = withStyles(TextStyles)(Typography);
 
 const useStyles = makeStyles(Configuration);
 
-const Text = ({ size, color, children, weight, align }: TextProps) => {
+const Text = ({ size, color, children, weight, align, style }: TextProps) => {
   let fontWeight;
   let textColor;
   let fontSize;
@@ -76,7 +77,7 @@ const Text = ({ size, color, children, weight, align }: TextProps) => {
   });
 
   return (
-    <TypographyStyled classes={{ root: classes.root }}>
+    <TypographyStyled classes={{ root: classes.root }} style={style}>
       {children}
     </TypographyStyled>
   );
