@@ -1,3 +1,15 @@
+# v1.0.15 (Fri Sep 10 2021)
+
+#### 🐛 Bug Fix
+
+- support nested text with inline [#17](https://github.com/sp0n-7/citizen-components/pull/17) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.14 (Fri Sep 10 2021)
 
 #### 🐛 Bug Fix
