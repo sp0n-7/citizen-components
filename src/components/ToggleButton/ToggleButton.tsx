@@ -1,26 +1,33 @@
 import React from "react";
-import classnames from "classnames"
-import style from "./ToggleButton.module.css"
+import classnames from "classnames";
+import style from "./ToggleButton.module.css";
 
-export interface ToggleButtonProps  {
+export interface ToggleButtonProps {
   label: string;
-  onChange: Function;
+  onClick: () => void;
   on: boolean;
-  onLabel?: string;
   disabled?: boolean;
-};
-
-const ToggleButton = ({ label, onChange, on, onLabel, disabled } : ToggleButtonProps) => {
-    return (
-        <div className={classnames(style.container, { [style.on]: on })}>
-            {!!label && <div className={style.label}>{label}</div>}
-            <button onClick={() => onChange()} className={style.toggle} disabled={disabled}>
-                <div className={style.circleContainer}>
-                    <div className={style.circle} />
-                </div>
-            </button>
-            {!!onLabel && <div className={style.offLabel}>{onLabel}</div>}
-        </div>
-    )
+  color?: string;
 }
+
+const ToggleButton = ({ label, onClick, on, disabled }: ToggleButtonProps) => {
+  return (
+    <div className={style.toggleContainer}>
+      {label}
+      <div
+        className={classnames(
+          style.toggle,
+          { [style.toggleOn]: on },
+          { [style.toggleOff]: !on },
+          { [style.disabled]: disabled }
+        )}
+        onClick={(e) => {
+          if (!disabled) onClick();
+        }}
+      >
+        <div className={style.toggleIndicator}></div>
+      </div>
+    </div>
+  );
+};
 export default ToggleButton;
