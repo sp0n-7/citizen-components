@@ -1,3 +1,18 @@
+# v1.0.17 (Fri Sep 10 2021)
+
+#### 🐛 Bug Fix
+
+- new change for tag [#20](https://github.com/sp0n-7/citizen-components/pull/20) ([@KevinMFinch](https://github.com/KevinMFinch))
+- Text default size [#19](https://github.com/sp0n-7/citizen-components/pull/19) ([@KevinMFinch](https://github.com/KevinMFinch))
+- Checkbox Component 2.0 [#13](https://github.com/sp0n-7/citizen-components/pull/13) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 2
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.16 (Fri Sep 10 2021)
 
 #### 🐛 Bug Fix
