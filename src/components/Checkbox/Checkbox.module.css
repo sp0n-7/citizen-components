@@ -1,0 +1,16 @@
+.box {
+  border-radius: 4px;
+  height: 24px;
+  margin-right: 8px;
+  width: 24px;
+  margin-top: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  border: .15em solid;
+}

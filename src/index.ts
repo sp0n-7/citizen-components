@@ -4,6 +4,6 @@ import ToggleButton from "./components/ToggleButton";
 import MultilineInput from "./components/MultilineInput";
 import Select from "./components/Select";
 import Text from "./components/Text";
+import Checkbox from "./components/Checkbox";
 import CalloutButton from "./components/CalloutButton"
-
-export { Button, TextInput, ToggleButton, MultilineInput, Select, Text, CalloutButton };
+export { Button, TextInput, ToggleButton, MultilineInput, Select, Text, CalloutButton, Checkbox };
