@@ -1,3 +1,63 @@
+# v1.0.16 (Fri Sep 10 2021)
+
+#### 🐛 Bug Fix
+
+- Made callout button less "invisibly wide" [#18](https://github.com/sp0n-7/citizen-components/pull/18) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
+# v1.0.15 (Fri Sep 10 2021)
+
+#### 🐛 Bug Fix
+
+- support nested text with inline [#17](https://github.com/sp0n-7/citizen-components/pull/17) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
+# v1.0.14 (Fri Sep 10 2021)
+
+#### 🐛 Bug Fix
+
+- Add arbitrary style to text [#16](https://github.com/sp0n-7/citizen-components/pull/16) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
+# v1.0.13 (Wed Sep 08 2021)
+
+#### 🐛 Bug Fix
+
+- Callout Button [#15](https://github.com/sp0n-7/citizen-components/pull/15) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
+# v1.0.12 (Tue Sep 07 2021)
+
+#### 🐛 Bug Fix
+
+- Add onClick to Button Component [#14](https://github.com/sp0n-7/citizen-components/pull/14) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.11 (Thu Sep 02 2021)
 
 #### 🐛 Bug Fix

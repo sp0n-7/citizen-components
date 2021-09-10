@@ -5,6 +5,7 @@ export const TextStyles = {
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
     color: "white",
     letterSpacing: "-0.25px",
+    display: "inline",
   },
 };
 
