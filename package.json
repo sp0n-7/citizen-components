@@ -1,6 +1,6 @@
 {
   "name": "citizen-components",
-  "version": "1.0.11",
+  "version": "1.0.15",
   "description": "Components custom built for citizen web development",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -37,10 +37,10 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "classnames": "^2.3.1",
-    "postcss-scss": "^4.0.0",
+    "postcss-scss": "^4.0.0"
   },
   "scripts": {
-    "storybook": "start-storybook -s src/public -p 6006",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "rollup -c"
   },

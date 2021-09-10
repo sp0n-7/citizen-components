@@ -12,7 +12,7 @@ const Template: Story<CheckboxProps> = (args) => {
   const [checked, setChecked] = useState(false)
   return (
     <div style={{width: "100%"}}>
-      <Checkbox active={checked} handleClick={() => setChecked(!checked)} color={args.color}/>
+      <Checkbox active={checked} handleClick={() => setChecked(!checked)} />
     </div>
   );
 };
