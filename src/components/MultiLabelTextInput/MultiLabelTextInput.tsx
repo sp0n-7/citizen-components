@@ -71,7 +71,6 @@ const StyledInput = withStyles({
 
 interface IProps {
   options: Array<any>;
-  handleChange: (value: string) => void;
   inputValue: string;
   handleInputChange: (value: string) => void;
   chipLabel: (option: any) => JSX.Element;
@@ -82,7 +81,6 @@ interface IProps {
 
 const MultiLabelTextInput = ({
   options,
-  handleChange,
   inputValue,
   handleInputChange,
   chipLabel,
@@ -119,11 +117,6 @@ const MultiLabelTextInput = ({
           onChange={(e) => handleInputChange(e.target.value.toLowerCase())}
           variant="outlined"
           label={inputLabel}
-          placeholder={
-            options
-              ? "search..."
-              : "search service areas, cities, or regions... "
-          }
         />
       )}
     />
