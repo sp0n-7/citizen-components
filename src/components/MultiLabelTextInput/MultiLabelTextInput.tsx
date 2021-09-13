@@ -1,17 +1,11 @@
 import React from "react";
 
-import { withStyles } from "@material-ui/styles";
-import { Chip, TextField } from "@material-ui/core";
-import { Autocomplete } from "@material-ui/lab";
 import {
-  AutocompleteStyles,
-  ChipStyles,
-  InputStyles,
+  StyledAutocomplete,
+  StyledChip,
+  StyledInput,
 } from "./MultiLabelTextInput.styles";
 
-const StyledAutocomplete = withStyles(AutocompleteStyles)(Autocomplete);
-const StyledChip = withStyles(ChipStyles)(Chip);
-const StyledInput = withStyles(InputStyles)(TextField);
 interface IProps {
   options: Array<any>;
   inputValue: string;
