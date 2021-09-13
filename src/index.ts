@@ -5,5 +5,17 @@ import MultilineInput from "./components/MultilineInput";
 import Select from "./components/Select";
 import Text from "./components/Text";
 import Checkbox from "./components/Checkbox";
-import CalloutButton from "./components/CalloutButton"
-export { Button, TextInput, ToggleButton, MultilineInput, Select, Text, CalloutButton, Checkbox };
+import CalloutButton from "./components/CalloutButton";
+import MultiLabelTextInput from "./components/MultiLabelTextInput";
+
+export {
+  Button,
+  TextInput,
+  ToggleButton,
+  MultilineInput,
+  Select,
+  Text,
+  CalloutButton,
+  Checkbox,
+  MultiLabelTextInput,
+};
