@@ -24,7 +24,6 @@ const Template: Story<any> = (args) => {
     <div style={{ width: "332px" }}>
       <MultiLabelTextInput
         options={options}
-        handleChange={() => {}}
         inputValue={inputValue}
         handleInputChange={handleInputChange}
         getOptionSelected={(option: any, value: any) => {
