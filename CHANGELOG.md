@@ -1,3 +1,15 @@
+# v1.0.21 (Mon Sep 13 2021)
+
+#### 🐛 Bug Fix
+
+- Revert "change styles back" [#24](https://github.com/sp0n-7/citizen-components/pull/24) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.20 (Mon Sep 13 2021)
 
 #### 🐛 Bug Fix
