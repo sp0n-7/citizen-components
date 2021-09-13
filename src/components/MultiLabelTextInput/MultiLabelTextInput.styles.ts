@@ -1,8 +1,4 @@
-import { withStyles } from "@material-ui/styles";
-import { Chip, TextField } from "@material-ui/core";
-import { Autocomplete } from "@material-ui/lab";
-
-export const StyledAutocomplete = withStyles({
+export const AutocompleteStyles = {
   root: {
     width: "100%",
     margin: "auto",
@@ -25,9 +21,9 @@ export const StyledAutocomplete = withStyles({
   clearIndicator: {
     display: "none",
   },
-})(Autocomplete);
+};
 
-export const StyledChip = withStyles({
+export const ChipStyles = {
   root: {
     backgroundColor: "#1a2633",
     borderRadius: "4px",
@@ -40,15 +36,15 @@ export const StyledChip = withStyles({
   label: {
     fontSize: "12px",
     lineHeight: "16px",
-    textTransform: "capitalize",
-    fontWeight: "bold",
+    textTransform: "capitalize" as const,
+    fontWeight: 600,
     display: "flex",
-    textAlign: "center",
+    textAlign: "center" as const,
     alignContent: "center",
   },
-})(Chip);
+};
 
-export const StyledInput = withStyles({
+export const InputStyles = {
   root: {
     padding: "0px !important",
     color: "white",
@@ -65,4 +61,4 @@ export const StyledInput = withStyles({
       },
     },
   },
-})(TextField);
+};
