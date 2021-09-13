@@ -19,12 +19,6 @@ export const StyledAutocomplete = withStyles({
     // Couldnt get to work without !important, MUI overwrites it for some reason
     padding: "6px 10px 0px 10px !important",
   },
-  popupIndicator: {
-    display: "none",
-  },
-  clearIndicator: {
-    display: "none",
-  },
 })(Autocomplete);
 
 export const StyledChip = withStyles({

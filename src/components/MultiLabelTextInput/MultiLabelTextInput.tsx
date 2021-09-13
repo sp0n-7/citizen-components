@@ -56,6 +56,8 @@ const MultiLabelTextInput = ({
           label={inputLabel}
         />
       )}
+      closeIcon={null}
+      popupIcon={null}
     />
   );
 };
