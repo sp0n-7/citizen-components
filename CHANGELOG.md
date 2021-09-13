@@ -1,3 +1,15 @@
+# v1.0.18 (Mon Sep 13 2021)
+
+#### 🐛 Bug Fix
+
+- New toggle button [#21](https://github.com/sp0n-7/citizen-components/pull/21) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.17 (Fri Sep 10 2021)
 
 #### 🐛 Bug Fix
