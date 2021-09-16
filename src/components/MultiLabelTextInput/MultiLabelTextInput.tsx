@@ -14,6 +14,9 @@ interface IProps {
   getOptionSelected: (option: any, value: any) => boolean;
   onDeleteOption: (option: any) => void;
   inputLabel: string;
+  open: boolean;
+  onClose: () => void;
+  onOpen: () => void;
 }
 
 const MultiLabelTextInput = ({
@@ -24,6 +27,9 @@ const MultiLabelTextInput = ({
   getOptionSelected,
   onDeleteOption,
   inputLabel,
+  open,
+  onClose,
+  onOpen,
 }: IProps) => {
   return (
     <StyledAutocomplete
@@ -32,8 +38,17 @@ const MultiLabelTextInput = ({
       options={options}
       value={options}
       inputValue={inputValue}
-      open={false}
       limitTags={2}
+      open={open}
+      onClose={(e, closeReason) => {
+        if (closeReason === "toggleInput") {
+          onClose();
+        }
+      }}
+      openOnFocus
+      onOpen={(e) => {
+        onOpen();
+      }}
       getOptionSelected={getOptionSelected}
       filterSelectedOptions
       renderTags={(value) =>
@@ -57,7 +72,6 @@ const MultiLabelTextInput = ({
         />
       )}
       closeIcon={null}
-      popupIcon={null}
     />
   );
 };

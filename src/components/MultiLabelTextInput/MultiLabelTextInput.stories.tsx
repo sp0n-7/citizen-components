@@ -11,6 +11,7 @@ export default {
 
 const Template: Story<any> = (args) => {
   const [inputValue, setInputValue] = useState("");
+  const [open, setOpen] = useState(false);
   const [options, setOptions] = useState<any>([
     { number: 12, subArea: "Manhattan" },
     { number: 25, subArea: "Brooklyn" },
@@ -21,39 +22,58 @@ const Template: Story<any> = (args) => {
     setInputValue(val);
   };
   return (
-    <div style={{ width: "332px" }}>
-      <MultiLabelTextInput
-        options={options}
-        inputValue={inputValue}
-        handleInputChange={handleInputChange}
-        getOptionSelected={(option: any, value: any) => {
-          return option.subArea === value.subArea;
-        }}
-        onDeleteOption={(option: any) => {
-          const indexToRemove = options.findIndex(
-            (opt: any) => opt.subArea === option.subArea
-          );
-          const newOpts = [...options];
-          newOpts.splice(indexToRemove, 1);
+    <>
+      <div style={{ width: "332px" }}>
+        <MultiLabelTextInput
+          open={open}
+          onOpen={() => {
+            setOpen(true);
+          }}
+          onClose={() => {
+            setOpen(false);
+          }}
+          options={options}
+          inputValue={inputValue}
+          handleInputChange={handleInputChange}
+          getOptionSelected={(option: any, value: any) => {
+            return option.subArea === value.subArea;
+          }}
+          onDeleteOption={(option: any) => {
+            const indexToRemove = options.findIndex(
+              (opt: any) => opt.subArea === option.subArea
+            );
+            const newOpts = [...options];
+            newOpts.splice(indexToRemove, 1);
 
-          setOptions([...newOpts]);
-        }}
-        chipLabel={(option: any) => (
-          <div style={{ display: "flex" }}>
-            {option.subArea}
-            <div
-              style={{
-                color: "#4da6ff",
-                paddingLeft: "4px",
-              }}
-            >
-              ({option.number})
+            setOptions([...newOpts]);
+          }}
+          chipLabel={(option: any) => (
+            <div style={{ display: "flex" }}>
+              {option.subArea}
+              <div
+                style={{
+                  color: "#4da6ff",
+                  paddingLeft: "4px",
+                }}
+              >
+                ({option.number})
+              </div>
             </div>
-          </div>
-        )}
-        inputLabel="Coverage Selection"
-      />
-    </div>
+          )}
+          inputLabel="Coverage Selection"
+        />
+      </div>
+      <div
+        style={{
+          color: "red",
+          width: "100px",
+          height: "20px",
+          marginTop: "50px",
+        }}
+      >
+        {`${open}`}
+      </div>
+    </>
   );
 };
 
