@@ -1,3 +1,15 @@
+# v1.0.22 (Thu Sep 16 2021)
+
+#### 🐛 Bug Fix
+
+- Hide clear icon, do open/closed as controlled [#25](https://github.com/sp0n-7/citizen-components/pull/25) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.21 (Mon Sep 13 2021)
 
 #### 🐛 Bug Fix
