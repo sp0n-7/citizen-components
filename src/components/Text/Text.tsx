@@ -29,6 +29,7 @@ const Text = ({ size, color, children, weight, align, style }: TextProps) => {
     case "xs":
       fontSize = "10px";
       lineHeight = "16px";
+      break;
     case "small":
       fontSize = "12px";
       lineHeight = "16px";
