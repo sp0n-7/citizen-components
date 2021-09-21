@@ -28,7 +28,7 @@ export default function Select({ options, ...props }: SelectInputProps) {
   const classes = useStyles();
   return (
     <SelectStyled
-      input={<TextInput notched label="Hey there label" />}
+      input={<TextInput notched label={props.label} />}
       defaultValue={"None"}
       displayEmpty
       MenuProps={{
