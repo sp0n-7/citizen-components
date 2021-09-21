@@ -1,3 +1,15 @@
+# v1.0.24 (Tue Sep 21 2021)
+
+#### ⚠️ Pushed to `master`
+
+- break ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.23 (Tue Sep 21 2021)
 
 #### 🐛 Bug Fix
