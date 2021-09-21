@@ -1,3 +1,15 @@
+# v1.0.23 (Tue Sep 21 2021)
+
+#### 🐛 Bug Fix
+
+- XS Text [#26](https://github.com/sp0n-7/citizen-components/pull/26) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.22 (Thu Sep 16 2021)
 
 #### 🐛 Bug Fix
