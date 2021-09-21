@@ -1,3 +1,19 @@
+# v1.0.26 (Tue Sep 21 2021)
+
+#### 🐛 Bug Fix
+
+- Create number input [#27](https://github.com/sp0n-7/citizen-components/pull/27) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### ⚠️ Pushed to `master`
+
+- dunce ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.25 (Tue Sep 21 2021)
 
 #### 🐛 Bug Fix
