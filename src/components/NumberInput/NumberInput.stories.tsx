@@ -1,0 +1,45 @@
+import React, { useState } from "react";
+import { Meta } from "@storybook/react/types-6-0";
+import { Story } from "@storybook/react";
+import NumberInput from "./NumberInput";
+import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
+
+export default {
+  title: "Components/Inputs/NumberInput",
+  component: NumberInput,
+} as Meta;
+
+const Template: Story<OutlinedInputProps> = (args) => {
+  const [val, setVal] = useState("1");
+
+  const onChange = (
+    e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
+  ) => {};
+
+  const onChangeUp = () => {
+    setVal((parseInt(val) + 1).toString());
+  };
+
+  const onChangeDown = () => {
+    setVal((parseInt(val) - 1).toString());
+  };
+
+  return (
+    <div style={{ width: "92px" }}>
+      <NumberInput
+        {...args}
+        value={val}
+        onChange={onChange}
+        onChangeUp={onChangeUp}
+        onChangeDown={onChangeDown}
+      />
+    </div>
+  );
+};
+
+export const Notched = Template.bind({});
+Notched.args = {
+  notched: true,
+  label: "Safety",
+  placeholder: "1",
+};

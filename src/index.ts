@@ -7,6 +7,7 @@ import Text from "./components/Text";
 import Checkbox from "./components/Checkbox";
 import CalloutButton from "./components/CalloutButton";
 import MultiLabelTextInput from "./components/MultiLabelTextInput";
+import NumberInput from "./components/NumberInput";
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   CalloutButton,
   Checkbox,
   MultiLabelTextInput,
+  NumberInput,
 };
