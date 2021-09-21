@@ -12,10 +12,6 @@ export default {
 const Template: Story<OutlinedInputProps> = (args) => {
   const [val, setVal] = useState("1");
 
-  const onChange = (
-    e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
-  ) => {};
-
   const onChangeUp = () => {
     setVal((parseInt(val) + 1).toString());
   };
@@ -29,7 +25,6 @@ const Template: Story<OutlinedInputProps> = (args) => {
       <NumberInput
         {...args}
         value={val}
-        onChange={onChange}
         onChangeUp={onChangeUp}
         onChangeDown={onChangeDown}
       />
