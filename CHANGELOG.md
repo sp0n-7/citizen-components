@@ -1,3 +1,15 @@
+# v1.0.28 (Thu Sep 23 2021)
+
+#### 🐛 Bug Fix
+
+- Change multiline styles slightly [#30](https://github.com/sp0n-7/citizen-components/pull/30) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.27 (Thu Sep 23 2021)
 
 #### 🐛 Bug Fix
