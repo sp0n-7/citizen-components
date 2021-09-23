@@ -11,7 +11,7 @@ const useStyles = makeStyles(Customization);
 const BaseInput = withStyles(baseStyles)(OutlinedInput);
 
 export interface TextInputProps extends OutlinedInputProps {
-  edited: boolean;
+  edited?: boolean;
 }
 
 const TextInput = ({ edited, ...props }: TextInputProps) => {
