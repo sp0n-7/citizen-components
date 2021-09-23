@@ -38,7 +38,7 @@ export default function Button({
     textColor = "white";
   } else if (buttonType === "secondary") {
     backgroundColor = "#666666";
-    textColor = "white";
+    textColor = "#b3b3b3";
   }
 
   if (size === "small") {
