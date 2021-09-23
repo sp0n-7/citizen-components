@@ -1,6 +1,5 @@
 export const baseStyles = {
   root: {
-    marginBottom: "16px",
     width: "200px",
     color: "#8c8c8c",
     alignItems: "normal",
