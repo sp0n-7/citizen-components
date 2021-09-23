@@ -13,7 +13,7 @@ const MultilineInput = (props: OutlinedInputProps) => {
   if (props.rows) {
     inputProps.style = {
       ...inputProps.style,
-      height: `${44 * Number(props.rows)}px`,
+      height: `${36 + 16 * Number(props.rows)}px`,
     };
   }
   return <BaseInput {...inputProps} />;

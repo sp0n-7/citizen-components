@@ -1,6 +1,6 @@
 export const baseStyles = {
   root: {
-    width: "200px",
+    width: "100%",
     color: "#8c8c8c",
     alignItems: "normal",
     "& .MuiOutlinedInput-notchedOutline": {
