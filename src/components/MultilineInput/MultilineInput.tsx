@@ -16,7 +16,7 @@ const MultilineInput = (props: OutlinedInputProps) => {
       height: `${36 + 16 * Number(props.rows)}px`,
     };
   }
-  return <BaseInput {...inputProps} />;
+  return <BaseInput {...inputProps} multiline />;
 };
 
 export default MultilineInput;

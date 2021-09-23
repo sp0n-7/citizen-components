@@ -19,12 +19,12 @@ const Template: Story<OutlinedInputProps> = (args) => {
   };
 
   return (
-    <>
-      <MultilineInput {...args} onChange={onChange} />
+    <div style={{ width: "200px" }}>
+      <MultilineInput {...args} multiline onChange={onChange} />
       <p>{val}</p>
-    </>
+    </div>
   );
 };
 
 export const Primary = Template.bind({});
-Primary.args = { placeholder: "Update...", multiline: true, rows: 3 };
+Primary.args = { placeholder: "Update...", rows: 3 };
