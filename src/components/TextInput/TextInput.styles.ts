@@ -15,6 +15,18 @@ export const baseStyles = {
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
     fontWeight: 500,
   },
+  disabled: {
+    color: "#8c8c8c",
+    "& .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#333333 !important",
+    },
+    "&:hover .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#333333",
+    },
+    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+      borderColor: "#333333",
+    },
+  },
   input: {
     "&::placeholder": {
       textOverflow: "ellipsis !important",
@@ -24,6 +36,7 @@ export const baseStyles = {
     fontSize: "12px",
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
   },
+
   notchedOutline: {
     "& > legend": {
       visibility: "visible",
@@ -34,3 +47,9 @@ export const baseStyles = {
     },
   },
 };
+
+export const Customization = () => ({
+  input: (props: { textColor?: string }) => ({
+    color: props.textColor,
+  }),
+});
