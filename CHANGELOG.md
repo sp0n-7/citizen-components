@@ -1,3 +1,15 @@
+# v1.0.27 (Thu Sep 23 2021)
+
+#### 🐛 Bug Fix
+
+- Margin bottom [#29](https://github.com/sp0n-7/citizen-components/pull/29) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.26 (Tue Sep 21 2021)
 
 #### 🐛 Bug Fix
