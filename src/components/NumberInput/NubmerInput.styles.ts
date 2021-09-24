@@ -48,9 +48,3 @@ export const baseStyles = {
     },
   },
 };
-
-export const Customization = () => ({
-  input: (props: { textColor?: string }) => ({
-    color: props.textColor,
-  }),
-});
