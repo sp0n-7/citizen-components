@@ -1,3 +1,15 @@
+# v1.0.34 (Fri Sep 24 2021)
+
+#### 🐛 Bug Fix
+
+- Change styling for number input [#36](https://github.com/sp0n-7/citizen-components/pull/36) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.33 (Fri Sep 24 2021)
 
 #### 🐛 Bug Fix
