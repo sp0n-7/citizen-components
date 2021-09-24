@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { OutlinedInput } from "@material-ui/core";
 import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
@@ -14,8 +14,9 @@ export interface MultilineInputProps extends OutlinedInputProps {
   edited?: boolean;
 }
 
-const MultilineInput = ({ edited, ...props }: MultilineInputProps) => {
-  const textColor = edited ? "white" : "#8c8c8c";
+const MultilineInput = (props: OutlinedInputProps) => {
+  const [originalValue, setOriginalValue] = useState(props.value);
+  const textColor = originalValue !== props.value ? "white" : "#8c8c8c";
 
   const inputProps = { ...props };
   if (props.rows) {

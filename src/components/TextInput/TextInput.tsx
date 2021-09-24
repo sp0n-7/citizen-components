@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { OutlinedInput } from "@material-ui/core";
 import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
@@ -10,12 +10,9 @@ const useStyles = makeStyles(Customization);
 
 const BaseInput = withStyles(baseStyles)(OutlinedInput);
 
-export interface TextInputProps extends OutlinedInputProps {
-  edited?: boolean;
-}
-
-const TextInput = ({ edited, ...props }: TextInputProps) => {
-  const textColor = edited ? "white" : "#8c8c8c";
+const TextInput = (props: OutlinedInputProps) => {
+  const [originalValue, setOriginalValue] = useState(props.value);
+  const textColor = originalValue !== props.value ? "white" : "#8c8c8c";
 
   const classes = useStyles({
     textColor,

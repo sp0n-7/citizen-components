@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
-import TextInput, { TextInputProps } from "./TextInput";
+import TextInput from "./TextInput";
+
+import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
 
 export default {
   title: "Components/Inputs/TextInput",
   component: TextInput,
 } as Meta;
 
-const Template: Story<TextInputProps> = (args) => {
+const Template: Story<OutlinedInputProps> = (args) => {
   const [val, setVal] = useState("hey this is a value");
-  const [edited, setEdited] = useState(false);
 
   const onChange = (
     e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
   ) => {
     setVal(e.target.value);
-    setEdited(true);
   };
 
   return (
     <>
-      <TextInput {...args} onChange={onChange} value={val} edited={edited} />
+      <TextInput {...args} onChange={onChange} value={val} />
     </>
   );
 };

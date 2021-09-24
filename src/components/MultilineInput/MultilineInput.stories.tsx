@@ -1,33 +1,26 @@
 import React, { useState } from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
-import MultilineInput, { MultilineInputProps } from "./MultilineInput";
+import MultilineInput from "./MultilineInput";
+import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
 
 export default {
   title: "Components/Inputs/MultilineInput",
   component: MultilineInput,
 } as Meta;
 
-const Template: Story<MultilineInputProps> = (args) => {
-  const [val, setVal] = useState("");
-  const [edited, setEdited] = useState(false);
+const Template: Story<OutlinedInputProps> = (args) => {
+  const [val, setVal] = useState("this is the original value");
 
   const onChange = (
     e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>
   ) => {
     setVal(e.target.value);
-    setEdited(true);
   };
 
   return (
-    <div style={{ width: "200px" }}>
-      <MultilineInput
-        {...args}
-        multiline
-        onChange={onChange}
-        value={val}
-        edited={edited}
-      />
+    <div style={{ width: "300px" }}>
+      <MultilineInput {...args} multiline onChange={onChange} value={val} />
       <p>{val}</p>
     </div>
   );
@@ -41,5 +34,4 @@ Edited.args = {
   placeholder: "Update...",
   rows: 3,
   disabled: false,
-  edited: false,
 };
