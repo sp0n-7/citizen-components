@@ -7,12 +7,12 @@ export const parameters = {
     },
   },
   backgrounds: {
-    default: 'POS',
+    default: "POS",
     values: [
       {
-        name: 'POS',
-        value: '#0E151D'
-      }
+        name: "POS",
+        value: "#0E151D",
+      },
     ],
   },
-}
+};
