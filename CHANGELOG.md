@@ -1,3 +1,15 @@
+# v1.0.32 (Fri Sep 24 2021)
+
+#### 🐛 Bug Fix
+
+- Multiline disabled and edited [#34](https://github.com/sp0n-7/citizen-components/pull/34) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.31 (Fri Sep 24 2021)
 
 #### 🐛 Bug Fix
