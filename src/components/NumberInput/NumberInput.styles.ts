@@ -34,7 +34,7 @@ export const baseStyles = {
       opacity: 100,
     },
     fontSize: "12px",
-    textAlign: "center",
+    textAlign: "center" as const,
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
   },
 
