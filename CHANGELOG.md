@@ -1,3 +1,15 @@
+# v1.0.31 (Fri Sep 24 2021)
+
+#### 🐛 Bug Fix
+
+- Add edited text field color and a disabled text field [#33](https://github.com/sp0n-7/citizen-components/pull/33) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.30 (Thu Sep 23 2021)
 
 #### 🐛 Bug Fix
