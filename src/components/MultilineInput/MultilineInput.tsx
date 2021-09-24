@@ -30,7 +30,7 @@ const MultilineInput = ({ edited, ...props }: MultilineInputProps) => {
   });
 
   return (
-    <BaseInput {...inputProps} multiline classes={{ input: classes.root }} />
+    <BaseInput {...inputProps} multiline classes={{ input: classes.input }} />
   );
 };
 
