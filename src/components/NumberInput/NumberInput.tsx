@@ -4,7 +4,7 @@ import { OutlinedInput, InputAdornment, IconButton } from "@material-ui/core";
 import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
 import { withStyles } from "@material-ui/core/styles";
 
-import { baseStyles } from "./NubmerInput.styles";
+import { baseStyles } from "./NumberInput.styles";
 import style from "./NumberInput.module.css";
 
 const BaseInput = withStyles(baseStyles)(OutlinedInput);
