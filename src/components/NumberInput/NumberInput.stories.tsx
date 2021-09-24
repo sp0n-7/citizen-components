@@ -21,7 +21,7 @@ const Template: Story<OutlinedInputProps> = (args) => {
   };
 
   return (
-    <div style={{ width: "92px" }}>
+    <div style={{ width: "72px" }}>
       <NumberInput
         {...args}
         value={val}
