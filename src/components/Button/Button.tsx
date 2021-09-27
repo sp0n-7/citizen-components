@@ -37,7 +37,7 @@ export default function Button({
     backgroundColor = "#1A2633";
     textColor = "white";
   } else if (buttonType === "secondary") {
-    backgroundColor = "#666666";
+    backgroundColor = "#404040";
     textColor = "#b3b3b3";
   }
 
