@@ -1,3 +1,15 @@
+# v1.0.35 (Mon Sep 27 2021)
+
+#### 🐛 Bug Fix
+
+- change button color [#37](https://github.com/sp0n-7/citizen-components/pull/37) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.34 (Fri Sep 24 2021)
 
 #### 🐛 Bug Fix
