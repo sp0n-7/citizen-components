@@ -7,24 +7,26 @@ export interface ToggleButtonProps {
   onClick: () => void;
   on: boolean;
   disabled?: boolean;
-  color?: string;
+  navBar?: boolean;
 }
 
-const ToggleButton = ({ label, onClick, on, disabled }: ToggleButtonProps) => {
+const ToggleButton = ({ label, onClick, on, disabled, navBar }: ToggleButtonProps) => {
   return (
     <div className={style.toggleContainer}>
       {label}
       <div
         className={classnames(
           style.toggle,
-          { [style.toggleOn]: on },
-          { [style.toggleOff]: !on }
+          { [style.toggleOn]: on && !navBar },
+          { [style.toggleOff]: !on && !navBar},
+          { [style.toggleOnNavBar]: on && navBar},
+          { [style.toggleOffNavBar]: !on && navBar},
         )}
         onClick={(e) => {
           if (!disabled) onClick();
         }}
       >
-        <div className={style.toggleIndicator}></div>
+        <div className={style.toggleIndicator}/>
       </div>
     </div>
   );
