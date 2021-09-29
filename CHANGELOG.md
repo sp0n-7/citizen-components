@@ -1,3 +1,15 @@
+# v1.0.37 (Wed Sep 29 2021)
+
+#### 🐛 Bug Fix
+
+- Add colored checkboxes [#39](https://github.com/sp0n-7/citizen-components/pull/39) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.36 (Wed Sep 29 2021)
 
 #### 🐛 Bug Fix
