@@ -11,6 +11,13 @@
   justify-content: center;
   color: white;
   background-color: transparent;
-  border-color: white;
-  border: .15em solid;
+  border: 1px solid #333333;
+}
+
+.active {
+  border: 1px solid white;
+}
+
+.blueActive {
+  border: 1px solid #4da6ff;
 }
