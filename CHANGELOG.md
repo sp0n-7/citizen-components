@@ -1,3 +1,15 @@
+# v1.0.36 (Wed Sep 29 2021)
+
+#### 🐛 Bug Fix
+
+- Toggle is colorful for navbar [#38](https://github.com/sp0n-7/citizen-components/pull/38) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.35 (Mon Sep 27 2021)
 
 #### 🐛 Bug Fix
