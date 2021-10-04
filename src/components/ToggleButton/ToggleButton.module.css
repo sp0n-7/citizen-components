@@ -3,13 +3,11 @@
   align-items: center;
   align-content: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  margin-bottom: 4px;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: -0.15px;
   color: #8c8c8c;
-  margin-right: 24px;
 }
 
 .toggle {
@@ -53,27 +51,27 @@
 }
 
 .toggleOnNavBar {
-  background: #0F2614;
-  border: 1px solid #1CB33E;
+  background: #0f2614;
+  border: 1px solid #1cb33e;
   transition: background-color 0.2s;
 }
 
 .toggleOnNavBar .toggleIndicator {
   margin-left: 28px;
-  background-color: #1CB33E;
+  background-color: #1cb33e;
   transition: background-color 0.2s, margin-left 0.2s ease-in-out;
 }
 
 .toggleOffNavBar {
-  border: 1px solid #FF1732;
+  border: 1px solid #ff1732;
   border-radius: 40px;
   transition: background-color 0.2s;
-  background-color: #331C1F;
+  background-color: #331c1f;
 }
 
 .toggleOffNavBar .toggleIndicator {
   margin-left: 4px;
-  background-color: #FF1732;
+  background-color: #ff1732;
   transition: flex 0.2s ease-in-out;
   transition: background-color 0.2s, margin-left 0.2s ease-in-out;
 }
