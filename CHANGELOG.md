@@ -1,3 +1,21 @@
+# v1.0.40 (Tue Oct 05 2021)
+
+#### 🐛 Bug Fix
+
+- Add story for release test [#43](https://github.com/sp0n-7/citizen-components/pull/43) ([@KevinMFinch](https://github.com/KevinMFinch))
+- Auto host storybook build on merge [#42](https://github.com/sp0n-7/citizen-components/pull/42) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### ⚠️ Pushed to `master`
+
+- Change workflow a bit ([@KevinMFinch](https://github.com/KevinMFinch))
+- Change token ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.39 (Mon Oct 04 2021)
 
 #### 🐛 Bug Fix
