@@ -30,9 +30,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
         run: |
           yarn install --frozen-lockfile
           yarn build
           npx auto shipit
+      - name: Auto host
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+        run: |
+          yarn install --frozen-lockfile
           yarn run deploy-storybook -- --ci
