@@ -22,3 +22,6 @@ Primary.args = { label: "Primary", disabled: false };
 
 export const Disabled = Template.bind({});
 Disabled.args = { label: "Disabled", disabled: true };
+
+export const NavBar = Template.bind({});
+NavBar.args = { label: "NavBar", disabled: false, navBar: true };
