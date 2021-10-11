@@ -1,3 +1,16 @@
+# v1.0.43 (Mon Oct 11 2021)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of https://github.com/sp0n-7/citizen-components ([@KevinMFinch](https://github.com/KevinMFinch))
+- Changes ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.42 (Tue Oct 05 2021)
 
 #### ⚠️ Pushed to `master`
