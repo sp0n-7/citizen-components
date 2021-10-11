@@ -78,3 +78,4 @@ const Template: Story<any> = (args) => {
 };
 
 export const CustomLabels = Template.bind({});
+CustomLabels.args = {};

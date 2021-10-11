@@ -65,7 +65,6 @@ const MultiLabelTextInput = ({
         <StyledInput
           {...params}
           value={inputValue}
-          style={{ height: "44px" }}
           onChange={(e) => handleInputChange(e.target.value.toLowerCase())}
           variant="outlined"
           label={inputLabel}
