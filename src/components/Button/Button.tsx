@@ -26,19 +26,42 @@ export default function Button({
   let textColor;
   let height;
   let padding;
+  let border;
 
   if (buttonType === "submit") {
-    backgroundColor = "#4DA6FF";
-    textColor = "white";
+    if (props.disabled) {
+      backgroundColor = "rgba(77, 166, 255, 0.3)";
+      textColor = "rgba(255, 255, 255, 0.3)";
+    } else {
+      backgroundColor = "#4DA6FF";
+      textColor = "white";
+    }
   } else if (buttonType === "warning") {
-    backgroundColor = "#331C1F";
-    textColor = "#CC858D";
+    if (props.disabled) {
+      backgroundColor = "background: rgba(51, 28, 31, 0.3)";
+      textColor = "rgba(204, 133, 141, 0.3)";
+    } else {
+      backgroundColor = "#331C1F";
+      textColor = "#CC858D";
+    }
   } else if (buttonType === "active") {
-    backgroundColor = "#1A2633";
-    textColor = "white";
+    if (props.disabled) {
+      backgroundColor = "#1A2633";
+      border = "1px solid rgba(0, 68, 203, 0.3)";
+      textColor = "rgba(255, 255, 255, 0.3)";
+    } else {
+      backgroundColor = "rgba(26, 38, 51, 0.3)";
+      border = "1px solid #0044CB";
+      textColor = "white";
+    }
   } else if (buttonType === "secondary") {
-    backgroundColor = "#404040";
-    textColor = "#b3b3b3";
+    if (props.disabled) {
+      backgroundColor = "rgba(64, 64, 64, 0.3)";
+      textColor = "rgba(230, 230, 230, 0.3)";
+    } else {
+      backgroundColor = "#404040";
+      textColor = "#b3b3b3";
+    }
   }
 
   if (size === "small") {
@@ -55,6 +78,7 @@ export default function Button({
     width,
     height,
     padding,
+    border,
   });
 
   return (
