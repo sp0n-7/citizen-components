@@ -1,3 +1,19 @@
-.incrementArrows > img {
+.incrementArrows {
   cursor: pointer;
+}
+
+.incrementArrows > img {
+  margin-top: 16px;
+}
+
+.downArrow {
+  padding-left: 6px;
+}
+
+.upArrow {
+  padding-right: 6px;
+}
+
+.upArrow > img {
+  float: right;
 }

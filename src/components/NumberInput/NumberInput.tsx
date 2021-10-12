@@ -1,6 +1,7 @@
 import React from "react";
+import classnames from "classnames";
 
-import { OutlinedInput, InputAdornment, IconButton } from "@material-ui/core";
+import { OutlinedInput } from "@material-ui/core";
 import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
 import { withStyles } from "@material-ui/core/styles";
 
@@ -19,19 +20,19 @@ const NumberInput = ({ onChangeUp, onChangeDown, ...props }: IProps) => {
     <BaseInput
       {...props}
       startAdornment={
-        <div className={style.incrementArrows}>
-          <img
-            onClick={onChangeDown}
-            src="https://assets.citizen.com/pos_assets/DownChevron.svg"
-          />
+        <div
+          className={classnames(style.incrementArrows, style.downArrow)}
+          onClick={onChangeDown}
+        >
+          <img src="https://assets.citizen.com/pos_assets/DownChevron.svg" />
         </div>
       }
       endAdornment={
-        <div className={style.incrementArrows}>
-          <img
-            onClick={onChangeUp}
-            src="https://assets.citizen.com/pos_assets/UpChevron.svg"
-          />
+        <div
+          className={classnames(style.incrementArrows, style.upArrow)}
+          onClick={onChangeUp}
+        >
+          <img src="https://assets.citizen.com/pos_assets/UpChevron.svg" />
         </div>
       }
     />
