@@ -16,6 +16,7 @@ export const Customization = () => ({
     width?: string;
     height?: string;
     padding?: string;
+    border?: string;
   }) => ({
     backgroundColor: props.backgroundColor,
     color: props.textColor,
@@ -26,5 +27,11 @@ export const Customization = () => ({
     width: props.width,
     height: props.height,
     padding: props.padding,
+    border: props.border,
+    "&:disabled": {
+      backgroundColor: props.backgroundColor,
+      color: props.textColor,
+      border: props.border,
+    },
   }),
 });

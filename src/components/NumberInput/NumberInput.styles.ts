@@ -3,6 +3,7 @@ export const baseStyles = {
     height: "44px",
     width: "100%",
     color: "#8c8c8c",
+
     "& .MuiOutlinedInput-notchedOutline": {
       borderColor: "#333333",
     },
@@ -14,6 +15,13 @@ export const baseStyles = {
     },
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
     fontWeight: 500,
+    paddingRight: "0px",
+    paddingLeft: "0px",
+
+    "& > div": {
+      width: "30px",
+      height: "100%",
+    },
   },
   disabled: {
     color: "#8c8c8c",
@@ -33,6 +41,7 @@ export const baseStyles = {
       color: "#8c8c8c",
       opacity: 100,
     },
+    width: "12px",
     fontSize: "12px",
     textAlign: "center" as const,
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
