@@ -18,20 +18,17 @@ const MultilineInput = (props: OutlinedInputProps) => {
   const [originalValue, setOriginalValue] = useState(props.value);
   const textColor = originalValue !== props.value ? "white" : "#8c8c8c";
 
-  const inputProps = { ...props };
-  if (props.rows) {
-    inputProps.style = {
-      ...inputProps.style,
-      height: `${36 + 16 * Number(props.rows)}px`,
-    };
-  }
-
   const classes = useStyles({
     textColor,
   });
 
   return (
-    <BaseInput {...inputProps} multiline classes={{ input: classes.input }} />
+    <BaseInput
+      {...props}
+      multiline
+      classes={{ input: classes.input }}
+      maxRows={Infinity}
+    />
   );
 };
 
