@@ -1,4 +1,6 @@
 import React from "react";
+import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import CloseIcon from "@material-ui/icons/Close";
 
 import {
   StyledAutocomplete,
@@ -17,6 +19,7 @@ interface IProps {
   open: boolean;
   onClose: () => void;
   onOpen: () => void;
+  onClear: () => void;
 }
 
 const MultiLabelTextInput = ({
@@ -30,6 +33,7 @@ const MultiLabelTextInput = ({
   open,
   onClose,
   onOpen,
+  onClear,
 }: IProps) => {
   return (
     <StyledAutocomplete
@@ -49,6 +53,7 @@ const MultiLabelTextInput = ({
       onOpen={(e) => {
         onOpen();
       }}
+      getLimitTagsText={(more) => ""}
       getOptionSelected={getOptionSelected}
       filterSelectedOptions
       renderTags={(value) =>
@@ -70,7 +75,8 @@ const MultiLabelTextInput = ({
           label={inputLabel}
         />
       )}
-      closeIcon={null}
+      popupIcon={<ArrowDropDownIcon style={{ fontSize: "28px" }} />}
+      closeIcon={<CloseIcon fontSize="small" onClick={onClear} />}
     />
   );
 };

@@ -32,6 +32,9 @@ const Template: Story<any> = (args) => {
           onClose={() => {
             setOpen(false);
           }}
+          onClear={() => {
+            setOptions([]);
+          }}
           options={options}
           inputValue={inputValue}
           handleInputChange={handleInputChange}
@@ -60,7 +63,7 @@ const Template: Story<any> = (args) => {
               </div>
             </div>
           )}
-          inputLabel="Coverage Selection"
+          inputLabel={`Coverage Selection (${options.length})`}
         />
       </div>
       <div
@@ -71,7 +74,7 @@ const Template: Story<any> = (args) => {
           marginTop: "50px",
         }}
       >
-        {`${open}`}
+        {`Open: ${open}`}
       </div>
     </>
   );
