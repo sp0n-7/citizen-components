@@ -25,9 +25,20 @@ export const StyledAutocomplete = withStyles({
   },
   clearIndicator: {
     color: "#666666",
+    "&:hover": {
+      color: "white",
+      cursor: "pointer",
+    },
   },
   popupIndicator: {
     color: "#666666",
+    "&:hover": {
+      color: "white",
+      cursor: "pointer",
+    },
+  },
+  endAdornment: {
+    marginTop: "-2px",
   },
 })(Autocomplete);
 
