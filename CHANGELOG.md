@@ -1,3 +1,15 @@
+# v1.0.46 (Thu Nov 04 2021)
+
+#### 🐛 Bug Fix
+
+- Expanding multiline input and changes to multi label text input [#46](https://github.com/sp0n-7/citizen-components/pull/46) ([@KevinMFinch](https://github.com/KevinMFinch))
+
+#### Authors: 1
+
+- Kevin Finch ([@KevinMFinch](https://github.com/KevinMFinch))
+
+---
+
 # v1.0.45 (Mon Oct 25 2021)
 
 #### 🐛 Bug Fix
