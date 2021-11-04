@@ -13,9 +13,9 @@ const Template: Story<any> = (args) => {
   const [inputValue, setInputValue] = useState("");
   const [open, setOpen] = useState(false);
   const [options, setOptions] = useState<any>([
-    { number: 12, subArea: "Manhattan" },
-    { number: 25, subArea: "Brooklyn" },
-    { number: 7, subArea: "Bronx" },
+    { number: 12, key: "Manhattan" },
+    { number: 25, key: "Brooklyn" },
+    { number: 7, key: "Bronx" },
   ]);
 
   const handleInputChange = (val: string) => {
@@ -39,11 +39,11 @@ const Template: Story<any> = (args) => {
           inputValue={inputValue}
           handleInputChange={handleInputChange}
           getOptionSelected={(option: any, value: any) => {
-            return option.subArea === value.subArea;
+            return option.key === value.key;
           }}
           onDeleteOption={(option: any) => {
             const indexToRemove = options.findIndex(
-              (opt: any) => opt.subArea === option.subArea
+              (opt: any) => opt.key === option.key
             );
             const newOpts = [...options];
             newOpts.splice(indexToRemove, 1);
@@ -52,7 +52,7 @@ const Template: Story<any> = (args) => {
           }}
           chipLabel={(option: any) => (
             <div style={{ display: "flex" }}>
-              {option.subArea}
+              {option.key}
               <div
                 style={{
                   color: "#4da6ff",

@@ -1,3 +1,15 @@
+# v1.0.45 (Mon Oct 25 2021)
+
+#### 🐛 Bug Fix
+
+- MultiLabelInput Changes [#45](https://github.com/sp0n-7/citizen-components/pull/45) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.44 (Wed Oct 13 2021)
 
 #### 🐛 Bug Fix

@@ -59,7 +59,7 @@ const MultiLabelTextInput = ({
       renderTags={(value) =>
         value.map((option: any) => (
           <StyledChip
-            key={option.subArea}
+            key={option.key}
             size="small"
             onDelete={() => onDeleteOption(option)}
             label={chipLabel(option)}
