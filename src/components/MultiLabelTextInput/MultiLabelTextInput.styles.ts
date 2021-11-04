@@ -39,6 +39,7 @@ export const StyledAutocomplete = withStyles({
   },
   endAdornment: {
     marginTop: "-2px",
+    right: "0px !important",
   },
 })(Autocomplete);
 

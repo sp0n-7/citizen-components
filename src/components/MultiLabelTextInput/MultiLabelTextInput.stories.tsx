@@ -13,9 +13,9 @@ const Template: Story<any> = (args) => {
   const [inputValue, setInputValue] = useState("");
   const [open, setOpen] = useState(false);
   const [options, setOptions] = useState<any>([
-    { number: 12, key: "Manhattan" },
-    { number: 25, key: "Brooklyn" },
-    { number: 7, key: "Bronx" },
+    { number: 5, key: "NYC Citywide" },
+    { number: 11, key: "Manhattan" },
+    // { number: 7, key: "Bronx" },
   ]);
 
   const handleInputChange = (val: string) => {
