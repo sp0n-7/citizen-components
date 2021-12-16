@@ -1,3 +1,15 @@
+# v1.0.48 (Thu Dec 16 2021)
+
+#### 🐛 Bug Fix
+
+- Made arrows larger for the level selector [#48](https://github.com/sp0n-7/citizen-components/pull/48) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.47 (Thu Nov 04 2021)
 
 #### 🐛 Bug Fix
