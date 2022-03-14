@@ -1,10 +1,6 @@
 import React from "react";
-import MaterialButton from '@material-ui/core/Button';
 import {ButtonProps} from "@material-ui/core/Button";
-import {withStyles} from "@material-ui/core/styles";
-import { CalloutButtonStyle } from "./CalloutButton.styles"
-
-const ButtonStyled = withStyles(CalloutButtonStyle)(MaterialButton);
+import style from "./CalloutButton.module.css";
 
 export interface StyledButtonProps extends ButtonProps {
   primary?: boolean;
@@ -16,9 +12,9 @@ export interface StyledButtonProps extends ButtonProps {
 
 export default function CalloutButton({ onClick, label, ...props }: StyledButtonProps) {
   return (
-    <ButtonStyled onClick={onClick} {...props} style={{textTransform: 'none'}} disableRipple >
+    <button onClick={onClick} {...props} style={{textTransform: 'none'}} className={style.label} >
       {label || props.children}
-    </ButtonStyled>
+    </button>
   );
 }
 
