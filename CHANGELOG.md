@@ -1,3 +1,16 @@
+# v1.0.48 (Mon Mar 14 2022)
+
+#### 🐛 Bug Fix
+
+- Change callout to non material [#51](https://github.com/sp0n-7/citizen-components/pull/51) ([@kusgupta](https://github.com/kusgupta))
+- Made arrows larger for the level selector [#48](https://github.com/sp0n-7/citizen-components/pull/48) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.47 (Thu Nov 04 2021)
 
 #### 🐛 Bug Fix
