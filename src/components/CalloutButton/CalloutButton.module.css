@@ -11,4 +11,5 @@
   border-color: #262626;
   border-width: 0px;
   cursor: pointer;
+  display: inline-block;
 }
