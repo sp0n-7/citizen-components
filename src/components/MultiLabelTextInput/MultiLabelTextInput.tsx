@@ -1,11 +1,11 @@
 import React from "react";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-import CloseIcon from "@material-ui/icons/Close";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import CloseIcon from "@mui/icons-material/Close";
 
 import {
   StyledAutocomplete,
   StyledChip,
-  StyledInput,
+  StyledInput
 } from "./MultiLabelTextInput.styles";
 
 interface IProps {
@@ -33,7 +33,7 @@ const MultiLabelTextInput = ({
   open,
   onClose,
   onOpen,
-  onClear,
+  onClear
 }: IProps) => {
   return (
     <StyledAutocomplete
@@ -50,13 +50,13 @@ const MultiLabelTextInput = ({
         }
       }}
       openOnFocus
-      onOpen={(e) => {
+      onOpen={e => {
         onOpen();
       }}
-      getLimitTagsText={(more) => ""}
+      getLimitTagsText={more => ""}
       getOptionSelected={getOptionSelected}
       filterSelectedOptions
-      renderTags={(value) =>
+      renderTags={value =>
         value.map((option: any) => (
           <StyledChip
             key={option.key}
@@ -66,11 +66,11 @@ const MultiLabelTextInput = ({
           />
         ))
       }
-      renderInput={(params) => (
+      renderInput={params => (
         <StyledInput
           {...params}
           value={inputValue}
-          onChange={(e) => handleInputChange(e.target.value.toLowerCase())}
+          onChange={e => handleInputChange(e.target.value.toLowerCase())}
           variant="outlined"
           label={inputLabel}
         />

@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
 import MultilineInput from "./MultilineInput";
-import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
+import { OutlinedInputProps } from "@mui/material/OutlinedInput";
 
 export default {
   title: "Components/Inputs/MultilineInput",
-  component: MultilineInput,
+  component: MultilineInput
 } as Meta;
 
-const Template: Story<OutlinedInputProps> = (args) => {
+const Template: Story<OutlinedInputProps> = args => {
   const [val, setVal] = useState("this is the original value");
 
   const onChange = (
@@ -33,5 +33,5 @@ export const Edited = Template.bind({});
 Edited.args = {
   placeholder: "Update...",
   rows: 3,
-  disabled: false,
+  disabled: false
 };

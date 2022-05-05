@@ -1,10 +1,10 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import { Typography } from "@mui/material";
+import { makeStyles, withStyles } from "@mui/styles";
 
 import { Configuration, TextStyles } from "./Text.styles";
 
-import { PropTypes } from "@material-ui/core";
+import { PropTypes } from "@mui/material";
 
 export interface TextProps {
   size?: "xs" | "small" | "medium";
@@ -81,7 +81,7 @@ const Text = ({ size, color, children, weight, align, style }: TextProps) => {
     fontWeight,
     fontSize,
     lineHeight,
-    textAlign: align,
+    textAlign: align
   });
 
   return (

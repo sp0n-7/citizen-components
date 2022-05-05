@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import { OutlinedInput } from "@material-ui/core";
-import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
-import { withStyles, makeStyles } from "@material-ui/core/styles";
+import { OutlinedInput } from "@mui/material";
+import { OutlinedInputProps } from "@mui/material/OutlinedInput";
+import { withStyles, makeStyles } from "@mui/styles";
 
 import { baseStyles, Customization } from "./MultilineInput.styles";
 
@@ -19,7 +19,7 @@ const MultilineInput = (props: OutlinedInputProps) => {
   const textColor = originalValue !== props.value ? "white" : "#8c8c8c";
 
   const classes = useStyles({
-    textColor,
+    textColor
   });
 
   return (

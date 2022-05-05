@@ -1,12 +1,12 @@
-import { PropTypes } from "@material-ui/core";
+import { PropTypes } from "@mui/material";
 
 export const TextStyles = {
   root: {
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
     color: "white",
     letterSpacing: "-0.25px",
-    display: "inline",
-  },
+    display: "inline"
+  }
 };
 
 export const Configuration = () => ({
@@ -21,6 +21,6 @@ export const Configuration = () => ({
     color: props.textColor,
     fontSize: props.fontSize,
     lineHeight: props.lineHeight,
-    textAlign: props.textAlign,
-  }),
+    textAlign: props.textAlign
+  })
 });

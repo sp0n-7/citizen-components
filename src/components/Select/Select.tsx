@@ -1,14 +1,14 @@
 import React, { ChangeEvent } from "react";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
-import MenuItem from "@material-ui/core/MenuItem";
-import { SelectProps } from "@material-ui/core/Select";
-import MaterialUISelect from "@material-ui/core/Select";
-import InputBase from "@material-ui/core/InputBase";
-import ArrowDropDownRoundedIcon from "@material-ui/icons/ArrowDropDownRounded";
+import { makeStyles, withStyles } from "@mui/styles";
+import MenuItem from "@mui/material/MenuItem";
+import { SelectProps } from "@mui/material/Select";
+import MaterialUISelect from "@mui/material/Select";
+import InputBase from "@mui/material/InputBase";
+import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
 import {
   BootStrapInputStyle,
   DropdownStyle,
-  SelectStyle,
+  SelectStyle
 } from "./Select.styles";
 import TextInput from "../TextInput";
 
@@ -35,18 +35,18 @@ export default function Select({ options, ...props }: SelectInputProps) {
         classes: { paper: classes.dropdown },
         anchorOrigin: {
           vertical: "top",
-          horizontal: "left",
+          horizontal: "left"
         },
         transformOrigin: {
           vertical: "top",
-          horizontal: "left",
+          horizontal: "left"
         },
-        getContentAnchorEl: null,
+        getContentAnchorEl: null
       }}
       IconComponent={ArrowDropDownRoundedIcon}
       {...props}
     >
-      {options.map((pair) => (
+      {options.map(pair => (
         <MenuItem value={pair.value}>{pair.label}</MenuItem>
       ))}
     </SelectStyled>

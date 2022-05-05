@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
 import NumberInput from "./NumberInput";
-import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
+import { OutlinedInputProps } from "@mui/material/OutlinedInput";
 
 export default {
   title: "Components/Inputs/NumberInput",
-  component: NumberInput,
+  component: NumberInput
 } as Meta;
 
-const Template: Story<OutlinedInputProps> = (args) => {
+const Template: Story<OutlinedInputProps> = args => {
   const [val, setVal] = useState("1");
 
   const onChangeUp = () => {
@@ -36,5 +36,5 @@ export const Notched = Template.bind({});
 Notched.args = {
   notched: true,
   label: "Safety",
-  placeholder: "1",
+  placeholder: "1"
 };

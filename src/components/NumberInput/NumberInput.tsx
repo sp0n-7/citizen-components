@@ -1,9 +1,9 @@
 import React from "react";
 import classnames from "classnames";
 
-import { OutlinedInput } from "@material-ui/core";
-import { OutlinedInputProps } from "@material-ui/core/OutlinedInput";
-import { withStyles } from "@material-ui/core/styles";
+import { OutlinedInput } from "@mui/material";
+import { OutlinedInputProps } from "@mui/material/OutlinedInput";
+import { withStyles } from "@mui/styles";
 
 import { baseStyles } from "./NumberInput.styles";
 import style from "./NumberInput.module.css";

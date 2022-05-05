@@ -1,7 +1,7 @@
 import React from "react";
-import MaterialButton from "@material-ui/core/Button";
-import { ButtonProps } from "@material-ui/core/Button";
-import { makeStyles, withStyles } from "@material-ui/core/styles";
+import MaterialButton from "@mui/material/Button";
+import { ButtonProps } from "@mui/material/Button";
+import { makeStyles, withStyles } from "@mui/styles";
 import { ButtonStyle, Customization } from "./Button.styles";
 
 const ButtonStyled = withStyles(ButtonStyle)(MaterialButton);
@@ -78,7 +78,7 @@ export default function Button({
     width,
     height,
     padding,
-    border,
+    border
   });
 
   return (
