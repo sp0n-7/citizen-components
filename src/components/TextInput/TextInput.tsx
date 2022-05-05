@@ -13,7 +13,6 @@ const BaseInput = withStyles(baseStyles)(OutlinedInput);
 const TextInput = (props: OutlinedInputProps) => {
   const [originalValue, setOriginalValue] = useState(props.value);
   const textColor = originalValue !== props.value ? "white" : "#8c8c8c";
-  TextInput.displayName = "hi";
 
   const classes = useStyles({
     textColor
