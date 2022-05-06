@@ -57,7 +57,7 @@ export const StyledChip = withStyles({
     fontSize: "12px",
     lineHeight: "16px",
     textTransform: "capitalize",
-    fontWeight: "bold",
+    fontWeight: "600",
     display: "flex",
     textAlign: "center",
     alignContent: "center",

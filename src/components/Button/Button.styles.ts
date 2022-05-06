@@ -1,12 +1,10 @@
 export const ButtonStyle = () => ({
   root: {
     borderRadius: "20px",
-  },
-  label: {
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
     fontSize: "12px",
-    lineHeight: "16px",
-  },
+    lineHeight: "16px"
+  }
 });
 
 export const Customization = () => ({
@@ -21,7 +19,7 @@ export const Customization = () => ({
     backgroundColor: props.backgroundColor,
     color: props.textColor,
     "&:hover": {
-      backgroundColor: props.backgroundColor,
+      backgroundColor: props.backgroundColor
     },
     fontWeight: 600,
     width: props.width,
@@ -31,7 +29,7 @@ export const Customization = () => ({
     "&:disabled": {
       backgroundColor: props.backgroundColor,
       color: props.textColor,
-      border: props.border,
-    },
-  }),
+      border: props.border
+    }
+  })
 });

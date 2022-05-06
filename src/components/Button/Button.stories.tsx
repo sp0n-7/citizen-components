@@ -5,10 +5,10 @@ import Button, { StyledButtonProps } from "./Button";
 
 export default {
   title: "Components/Button",
-  component: Button,
+  component: Button
 } as Meta;
 
-const Template: Story<StyledButtonProps> = (args) => {
+const Template: Story<StyledButtonProps> = args => {
   return <Button {...args}>{args.children}</Button>;
 };
 
@@ -25,5 +25,5 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   buttonType: "secondary",
   children: "Secondary",
-  width: "122px",
+  width: "122px"
 };
