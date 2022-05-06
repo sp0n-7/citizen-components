@@ -5,13 +5,13 @@ export const baseStyles = {
     color: "#8c8c8c",
 
     "& .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#333333",
+      borderColor: "#333333"
     },
     "&:hover .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#333333",
+      borderColor: "#333333"
     },
     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#333333",
+      borderColor: "#333333"
     },
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
     fontWeight: 500,
@@ -20,31 +20,30 @@ export const baseStyles = {
 
     "& > div": {
       width: "30px",
-      height: "100%",
-    },
+      height: "100%"
+    }
   },
   disabled: {
     color: "#8c8c8c",
     "& .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#333333 !important",
+      borderColor: "#333333 !important"
     },
     "&:hover .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#333333",
+      borderColor: "#333333"
     },
     "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-      borderColor: "#333333",
-    },
+      borderColor: "#333333"
+    }
   },
   input: {
     "&::placeholder": {
       textOverflow: "ellipsis !important",
       color: "#8c8c8c",
-      opacity: 100,
+      opacity: 100
     },
     width: "12px",
     fontSize: "12px",
-    textAlign: "center" as const,
-    fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
+    fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(",")
   },
 
   notchedOutline: {
@@ -54,6 +53,7 @@ export const baseStyles = {
       lineHeight: "16px",
       color: "#8C8C8C",
       paddingBottom: 5,
-    },
-  },
+      opacity: 1
+    }
+  }
 };

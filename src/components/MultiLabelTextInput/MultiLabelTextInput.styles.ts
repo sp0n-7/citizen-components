@@ -40,6 +40,16 @@ export const StyledAutocomplete = withStyles({
   endAdornment: {
     marginTop: "-2px",
     right: "0px !important"
+  },
+  notchedOutline: {
+    "& > legend": {
+      visibility: "visible",
+      fontSize: "10px",
+      lineHeight: "16px",
+      color: "#8C8C8C",
+      paddingBottom: 5,
+      opacity: 1
+    }
   }
 })(Autocomplete);
 
