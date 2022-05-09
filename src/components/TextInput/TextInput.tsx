@@ -5,6 +5,8 @@ import { TextFieldProps } from "@mui/material/TextField";
 import { styled } from "@mui/material/styles";
 
 const BaseInput = styled(TextField)`
+  width: 100%;
+
   .MuiOutlinedInput-root {
     height: 44px;
     width: 100%;
