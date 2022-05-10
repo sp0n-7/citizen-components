@@ -58,7 +58,8 @@ const BaseInput = styled(TextField)`
 
 const TextInput = (props: TextFieldProps) => {
   const [originalValue, setOriginalValue] = useState(props.value);
-  const textColor = originalValue !== props.value ? "white" : "#8c8c8c";
+  const textColor =
+    originalValue !== props.value ? "white !important" : "#8c8c8c !important";
 
   return (
     <BaseInput
