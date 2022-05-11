@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import CloseIcon from "@mui/icons-material/Close";

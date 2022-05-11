@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 import { Meta } from "@storybook/react/types-6-0";
 import { Story } from "@storybook/react";
@@ -6,15 +7,15 @@ import MultiLabelTextInput from "./MultiLabelTextInput";
 
 export default {
   title: "Components/Inputs/MultiLabelTextInput",
-  component: MultiLabelTextInput,
+  component: MultiLabelTextInput
 } as Meta;
 
-const Template: Story<any> = (args) => {
+const Template: Story<any> = args => {
   const [inputValue, setInputValue] = useState("");
   const [open, setOpen] = useState(false);
   const [options, setOptions] = useState<any>([
     { number: 5, key: "NYC Citywide" },
-    { number: 11, key: "Manhattan" },
+    { number: 11, key: "Manhattan" }
     // { number: 7, key: "Bronx" },
   ]);
 
@@ -56,7 +57,7 @@ const Template: Story<any> = (args) => {
               <div
                 style={{
                   color: "#4da6ff",
-                  paddingLeft: "4px",
+                  paddingLeft: "4px"
                 }}
               >
                 ({option.number})
@@ -71,7 +72,7 @@ const Template: Story<any> = (args) => {
           color: "red",
           width: "100px",
           height: "20px",
-          marginTop: "50px",
+          marginTop: "50px"
         }}
       >
         {`Open: ${open}`}

@@ -1,3 +1,5 @@
+import { PropTypes } from "@mui/material";
+
 export const TextStyles = {
   root: {
     fontFamily: ["-apple-system", "BlinkMacSystemFont", "sans-serif"].join(","),
@@ -9,7 +11,7 @@ export const TextStyles = {
 
 export const Configuration = () => ({
   root: (props: {
-    fontWeight?: string;
+    fontWeight?: number;
     textColor?: string;
     fontSize?: string;
     lineHeight?: string;

@@ -11,12 +11,13 @@ export interface TextProps {
   weight?: "normal" | "semibold" | "bold";
   color: string;
   children: React.ReactNode;
-  align?: PropTypes.Alignment;
+  align?: string | undefined;
   style?: React.CSSProperties;
 }
 
 const TypographyStyled = withStyles(TextStyles)(Typography);
 
+// @ts-ignore
 const useStyles = makeStyles(Configuration);
 
 const Text = ({ size, color, children, weight, align, style }: TextProps) => {

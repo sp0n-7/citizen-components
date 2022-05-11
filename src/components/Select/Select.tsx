@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import MenuItem from "@mui/material/MenuItem";
 import { SelectProps } from "@mui/material/Select";
@@ -33,8 +34,9 @@ export default function Select({ options, ...props }: SelectInputProps) {
     <StyledTextInput
       select
       defaultValue={"None"}
-      displayEmpty
+      notched={false}
       SelectProps={{
+        displayEmpty: true,
         MenuProps: {
           anchorOrigin: {
             vertical: "top",
