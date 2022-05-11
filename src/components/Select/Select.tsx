@@ -1,19 +1,9 @@
-import React, { ChangeEvent } from "react";
-import { makeStyles, withStyles } from "@mui/styles";
+import React from "react";
 import MenuItem from "@mui/material/MenuItem";
 import { SelectProps } from "@mui/material/Select";
-import MaterialUISelect from "@mui/material/Select";
-import InputBase from "@mui/material/InputBase";
 import ArrowDropDownRoundedIcon from "@mui/icons-material/ArrowDropDownRounded";
-import {
-  BootStrapInputStyle,
-  DropdownStyle,
-  SelectStyle
-} from "./Select.styles";
 import TextInput from "../TextInput";
-
-const useStyles = makeStyles(DropdownStyle);
-const SelectStyled = withStyles(SelectStyle)(MaterialUISelect);
+import { styled } from "@mui/material/styles";
 
 export interface option {
   label: string;
@@ -24,31 +14,77 @@ export interface SelectInputProps extends SelectProps {
   options: option[];
 }
 
+const StyledTextInput = styled(TextInput)`
+  .MuiSelect-select {
+    color: white;
+  }
+
+  .MuiSvgIcon-root {
+    fill: #8c8c8c !important;
+  }
+
+  & label {
+    padding-top: 0 !important;
+  }
+`;
+
 export default function Select({ options, ...props }: SelectInputProps) {
-  const classes = useStyles();
   return (
-    <SelectStyled
-      input={<TextInput notched label={props.label} />}
+    <StyledTextInput
+      select
       defaultValue={"None"}
       displayEmpty
-      MenuProps={{
-        classes: { paper: classes.dropdown },
-        anchorOrigin: {
-          vertical: "top",
-          horizontal: "left"
-        },
-        transformOrigin: {
-          vertical: "top",
-          horizontal: "left"
-        },
-        getContentAnchorEl: null
+      SelectProps={{
+        MenuProps: {
+          anchorOrigin: {
+            vertical: "top",
+            horizontal: "left"
+          },
+          transformOrigin: {
+            vertical: "top",
+            horizontal: "left"
+          },
+          anchorEl: null,
+          PaperProps: {
+            sx: {
+              ".MuiList-root": {
+                paddingTop: "0",
+                paddingBottom: "0"
+              }
+            }
+          }
+        }
       }}
-      IconComponent={ArrowDropDownRoundedIcon}
+      IconComponent={<ArrowDropDownRoundedIcon sx={{ fill: "#8c8c8c" }} />}
       {...props}
     >
       {options.map(pair => (
-        <MenuItem value={pair.value}>{pair.label}</MenuItem>
+        <MenuItem
+          value={pair.value}
+          sx={{
+            backgroundColor: "#0E151D",
+            fontSize: 12,
+            color: "#8C8C8C",
+            fontWeight: 500,
+            fontFamily: [
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "sans-serif"
+            ].join(","),
+            "&.MuiMenuItem-root.Mui-selected": {
+              backgroundColor: "#262626"
+            },
+            "&$selected": {
+              backgroundColor: "red"
+            },
+            "&.MuiMenuItem-root:hover": {
+              backgroundColor: "rgba(38,38,38,0.91)"
+            }
+          }}
+        >
+          {pair.label}
+        </MenuItem>
       ))}
-    </SelectStyled>
+    </StyledTextInput>
   );
 }

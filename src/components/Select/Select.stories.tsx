@@ -6,10 +6,10 @@ import Select from "./Select";
 
 export default {
   title: "Components/Select",
-  component: Select,
+  component: Select
 } as Meta;
 
-const Template: Story<SelectInputProps> = (args) => {
+const Template: Story<SelectInputProps> = args => {
   const [value, setValue] = React.useState<any>("");
 
   const handleChange = (
@@ -20,7 +20,12 @@ const Template: Story<SelectInputProps> = (args) => {
 
   return (
     <div style={{ width: "300px" }}>
-      <Select onChange={handleChange} value={value} {...args} />
+      <Select
+        onChange={handleChange}
+        value={value}
+        {...args}
+        label={"Select"}
+      />
     </div>
   );
 };
@@ -30,6 +35,6 @@ Primary.args = {
   options: [
     { label: "None", value: "" },
     { label: "Milk", value: "Milk" },
-    { label: "Orange Juice", value: "Tree" },
-  ],
+    { label: "Orange Juice", value: "Tree" }
+  ]
 };
