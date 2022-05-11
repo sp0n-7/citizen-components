@@ -66,6 +66,8 @@ export default function Select({ options, ...props }: SelectInputProps) {
             fontSize: 12,
             color: "#8C8C8C",
             fontWeight: 500,
+            height: "34px",
+            border: "0px solid transparent",
             fontFamily: [
               "-apple-system",
               "BlinkMacSystemFont",
@@ -74,11 +76,8 @@ export default function Select({ options, ...props }: SelectInputProps) {
             "&.MuiMenuItem-root.Mui-selected": {
               backgroundColor: "#262626"
             },
-            "&$selected": {
-              backgroundColor: "red"
-            },
             "&.MuiMenuItem-root:hover": {
-              backgroundColor: "rgba(38,38,38,0.91)"
+              backgroundColor: "rgba(38,38,38,0.94)"
             }
           }}
         >
