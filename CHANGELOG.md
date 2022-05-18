@@ -1,3 +1,18 @@
+# v1.0.48 (Wed May 18 2022)
+
+#### 🐛 Bug Fix
+
+- Fix Callout Button width sizing [#56](https://github.com/sp0n-7/citizen-components/pull/56) ([@kusgupta](https://github.com/kusgupta))
+- Style callout button [#54](https://github.com/sp0n-7/citizen-components/pull/54) ([@kusgupta](https://github.com/kusgupta))
+- Change callout to non material [#51](https://github.com/sp0n-7/citizen-components/pull/51) ([@kusgupta](https://github.com/kusgupta))
+- Made arrows larger for the level selector [#48](https://github.com/sp0n-7/citizen-components/pull/48) ([@kusgupta](https://github.com/kusgupta))
+
+#### Authors: 1
+
+- Kushan Gupta ([@kusgupta](https://github.com/kusgupta))
+
+---
+
 # v1.0.47 (Thu Nov 04 2021)
 
 #### 🐛 Bug Fix
